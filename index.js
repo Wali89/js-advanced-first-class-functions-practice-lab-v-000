@@ -26,8 +26,13 @@ const driversByName = function (drivers) {
   });
 }
 
-const totalRevenue = function (agg, drivers) {
-  return agg + drivers.revenue;
-  driver.reduce(totalRevenue, 0);
+const totalRevenue = function (drivers) {
+  return drivers.reduce(function (total, currentDriver){
+    return currentDriver.revenue + total;
+  }, 0);
 
+}
+
+const averageRevenue = function (drivers) {
+  return drivers.reduce(function (total, curren)
 }
