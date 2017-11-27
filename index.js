@@ -28,6 +28,6 @@ const driversByName = function (drivers) {
 
 const totalRevenue = function (agg, drivers) {
   return agg + drivers.revenue;
-  drivers.reduce(totalRevenue, 0)
+  drivers.reduce(totalRevenue, 0);
 
 }
